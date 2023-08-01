@@ -1,0 +1,3 @@
+TxScript UpgradePresale(presale: AyinPresale, newBytecode: ByteVec) {
+    presale.upgrade(newBytecode)
+}

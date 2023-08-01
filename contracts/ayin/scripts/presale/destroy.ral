@@ -1,0 +1,3 @@
+TxScript DestroyPresale(presale: AyinPresale, balanceTo: Address) {
+    presale.destroy(balanceTo)
+}

@@ -1,0 +1,3 @@
+TxScript DepositAyin(presale: AyinPresale, amount: U256) {
+    presale.depositAyin{callerAddress!() -> presale.getAyinTokenId(): amount}(amount)
+}

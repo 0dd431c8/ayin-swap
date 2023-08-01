@@ -1,0 +1,7 @@
+TxScript BuyAyin(presale: AyinPresale, amount: U256) {
+    let alphPerToken = presale.getAlphPerToken()
+
+    let totalPrice = amount * alphPerToken / 1e18
+
+    presale.buy{callerAddress!() -> ALPH: totalPrice}(amount)
+}

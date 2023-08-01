@@ -1,0 +1,4 @@
+TxScript MintAyin(ayin: AyinToken, to: Address, amount: U256) {
+    transferToken!(callerAddress!(), to, ALPH, dustAmount!())
+    ayin.mint(to, amount)
+}
